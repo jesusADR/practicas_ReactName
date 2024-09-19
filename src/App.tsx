@@ -1,3 +1,5 @@
+import { BasicTypes } from "./typescript"
+
 function App() {
  
 
@@ -8,6 +10,7 @@ function App() {
         <h1>Introduccion a ts - React</h1>
 
           {/* a */}
+          <BasicTypes/>
 
       </main>
     </>
