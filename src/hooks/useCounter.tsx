@@ -9,7 +9,9 @@ export const useCounter = ({ initialValue = 0 }: Options) => {
     const [count, setCount] = useState<number>(initialValue);
 
     const increaseBy = (value: number) => {
-        setCount(count + value);
+        const newValue = count + value;
+        if (newValue >= 0)
+            setCount(count + value);
     }
 
     return {
@@ -18,6 +20,5 @@ export const useCounter = ({ initialValue = 0 }: Options) => {
 
         //Methods
         increaseBy,
-
     }
 }
