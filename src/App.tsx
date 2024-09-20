@@ -1,14 +1,17 @@
-import {BasicTypes} from './typescript'
+import { Counter } from './components';
 
 function App() {
 
   return (
     <main>
-      <h1>Introdiccion a TS - react</h1>
+      <h1>Introduccion a TS - react</h1>
 
       {/*aqui*/}
+      {/*<BasicTypes/>*/}
+      {/* { <ObjectLiterals />} */}
+      {/* <BasicFunctions /> */}
+      < Counter />
 
-      <BasicTypes/>
 
     </main>
   )
